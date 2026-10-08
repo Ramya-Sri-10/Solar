@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solar Defender 🚀</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 Solar Defender</h1>
+        <p>Defend the galaxy. Survive the invasion!</p>
+    </header>
+
+    <main class="game-layout">
+
+        <!-- Instructions -->
+        <section class="panel instructions">
+            <h2>🎮 How to Play</h2>
+
+            <p>⬅️ ➡️ Move left and right</p>
+            <p>⬆️ ⬇️ Move up and down</p>
+            <p>Spacebar: Shoot enemies</p>
+            <p>Collect glowing power-ups!</p>
+            <p>Avoid enemy ships and asteroids.</p>
+
+            <button id="startBtn">Start Game</button>
+
+            <button id="restartBtn">Restart Game</button>
+        </section>
+
+        <!-- Main Game -->
+        <section class="game-container">
+
+            <div class="hud">
+                <span>⭐ Score: <strong id="score">0</strong></span>
+                <span>❤️ Lives: <strong id="lives">3</strong></span>
+                <span>🛡️ Shield: <strong id="shield">OFF</strong></span>
+            </div>
+
+            <canvas id="gameCanvas" width="800" height="600">
+                Your browser does not support HTML Canvas.
+            </canvas>
+
+            <div id="message" class="message">
+                <h2>READY, PILOT?</h2>
+                <p>Protect the galaxy from the alien invasion!</p>
+                <button id="playBtn">Launch Mission 🚀</button>
+            </div>
+
+            <div class="mobile-controls">
+                <button id="leftBtn">⬅️</button>
+                <button id="upBtn">⬆️</button>
+                <button id="downBtn">⬇️</button>
+                <button id="rightBtn">➡️</button>
+                <button id="fireBtn">🔥 FIRE</button>
+            </div>
+
+        </section>
+
+        <!-- Statistics -->
+        <section class="panel statistics">
+            <h2>🏆 Mission Status</h2>
+
+            <p>Current Score</p>
+            <h2 id="finalScore">0</h2>
+
+            <hr>
+
+            <p>Best Score</p>
+            <h2 id="highScore">0</h2>
+
+            <hr>
+
+            <p>🌌 Mission:</p>
+            <h3 id="level">1</h3>
+
+            <p class="tip">
+                Tip: Keep moving to avoid enemy attacks!
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Solar Defender © 2026 | Explore. Defend. Survive.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
